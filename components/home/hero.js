@@ -64,7 +64,7 @@ export default function Hero({ locale, CTALocale }) {
 								<a
 									title='whitepaper code'
 									className='btn btn-sm md:btn-md btn-base border-none hover:ring-1 ring-base-content text-base-100 hover:text-base-content bg-base-content hover:bg-base-100 rounded-full'
-									href='https://pump.fun/coin/G9fPLpbXnUW15rv71htTr91zasYTxZUB3m8c5iD1pump'
+									href='https://pump.fun/coin/3qfS3YBbwDXAxXCQS1cmePv3S78phnBNu8WMQAV6pump'
 								>
 									<IoBagCheckOutline size={15} />
 									BUY $DATAGENIE
