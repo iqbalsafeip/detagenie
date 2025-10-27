@@ -76,6 +76,7 @@ export default function Hero({ locale, CTALocale }) {
 									title='whitepaper code'
 									className='btn btn-sm md:btn-md btn-base border-none hover:ring-1 ring-base-content text-base-100 hover:text-base-content bg-base-content hover:bg-base-100 rounded-full'
 									href='/Whitepaper.pdf'
+									target='_blank'
 								>
 									<MdEditDocument size={15} />
 									Whitepaper
