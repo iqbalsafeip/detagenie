@@ -35,25 +35,12 @@ export default function Footer() {
 						<Image
 							width={200}
 							height={200}
-							src={'/logo.gif'}
+							src={'/logo.png'}
 							className='transition-all hover:scale-110 w-6 md:w-10 h-6 md:h-10'
 							alt='logo'
 						></Image>
-						<h2 className='ml-3 font-bold leading-5'>Landing Page</h2>
 					</a>
-					<div className='flex flex-wrap justify-center gap-x-2 md:gap-x-5 gap-y-1'>
-						{linkList.map((link, index) => {
-							return (
-								<a
-									key={index}
-									title={link.name}
-									href={`/${langName}${link.url}`}
-								>
-									{link.name}
-								</a>
-							);
-						})}
-					</div>
+					
 				</div>
 
 				<p>
@@ -63,7 +50,7 @@ export default function Footer() {
 						href='http://huglemon.com?rel=landingpage'
 						target='_blank'
 					>
-						hugLemon
+						Data Genie
 					</a>{' '}
 					present.
 				</p>

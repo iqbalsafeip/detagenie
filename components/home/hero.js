@@ -3,9 +3,12 @@ import HeroIcons from './icons';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { SiGithub } from 'react-icons/si';
-import { IoDocumentText } from 'react-icons/io5';
+import { IoBagCheckOutline, IoDocumentText } from 'react-icons/io5';
 
 import { useEffect, useState } from 'react';
+import { GrDocument, GrDocumentCloud } from 'react-icons/gr';
+import { BsFile, BsSignIntersection } from 'react-icons/bs';
+import { MdEditDocument } from 'react-icons/md';
 export default function Hero({ locale, CTALocale }) {
 	const [tilt, setTilt] = useState(45);
 	const [duration, setDuration] = useState(0.8);
@@ -54,23 +57,31 @@ export default function Hero({ locale, CTALocale }) {
 
 					<div className='w-full md:w-8/12 mx-auto flex flex-col md:flex-row md:items-center justify-between gap-y-5'>
 						<HeroIcons />
+						<div className='flex flex-row justify-center items-center gap-2'>
 
-						<div className='flex flex-col md:flex-row gap-2'>
-							<a
-								title='get source code'
-								className='btn btn-sm md:btn-md btn-base border-none hover:ring-1 ring-base-content text-base-100 hover:text-base-content bg-base-content hover:bg-base-100 rounded-full'
-								href='https://github.com/huglemon/inwind-landing-page'
-							>
-								<SiGithub />
-								{CTALocale.btn1}
-							</a>
-							<a
-								title='get source code'
-								className='btn btn-sm md:btn-md btn-base rounded-full'
-								href='https://huglemon.com/blog/i-open-sourced-a-saas-landing-page'
-							>
-								<IoDocumentText /> {CTALocale.btn2}
-							</a>
+							
+							<div className='flex flex-col md:flex-row gap-2'>
+								<a
+									title='whitepaper code'
+									className='btn btn-sm md:btn-md btn-base border-none hover:ring-1 ring-base-content text-base-100 hover:text-base-content bg-base-content hover:bg-base-100 rounded-full'
+									href='#'
+								>
+									<IoBagCheckOutline size={15} />
+									BUY $DATAGENIE
+								</a>
+
+							</div>
+							<div className='flex flex-col md:flex-row gap-2'>
+								<a
+									title='whitepaper code'
+									className='btn btn-sm md:btn-md btn-base border-none hover:ring-1 ring-base-content text-base-100 hover:text-base-content bg-base-content hover:bg-base-100 rounded-full'
+									href='/Whitepaper.pdf'
+								>
+									<MdEditDocument size={15} />
+									Whitepaper
+								</a>
+
+							</div>
 						</div>
 					</div>
 				</motion.div>
